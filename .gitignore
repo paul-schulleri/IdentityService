@@ -1,0 +1,14 @@
+# System Files
+.DS_Store
+.idea
+*.iml
+
+.ebextensions
+.elasticbeanstalk
+config
+scripts
+*.phar
+
+# Vendor Packages
+/vendor
+out/

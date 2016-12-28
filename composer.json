@@ -1,0 +1,37 @@
+{
+  "name": "IdentityService",
+  "description": "Fingerprinting user on its journey",
+  "keywords": [
+    "handler"
+  ],
+  "homepage": "http://schulleri.de",
+  "license": "schulleri",
+  "authors": [],
+  "require": {
+    "php": ">=5.6",
+    "schulleri/olando": "~2.7",
+    "symfony/serializer": "3.0.*",
+    "guzzlehttp/guzzle": "~6.0",
+    "mobiledetect/mobiledetectlib": "^2.8",
+    "sinergi/browser-detector": "^6.0",
+    "mongodb/mongodb": "v1.0.x-dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.*"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:paul-schulleri/olando.git"
+    }
+  ],
+  "config": {
+    "bin-dir": "scripts"
+  },
+  "autoload": {
+    "psr-4": {
+      "IdentityService\\": "src/IdentityService"
+    }
+  },
+  "minimum-stability": "stable"
+}

@@ -1,0 +1,36 @@
+<phpunit
+        bootstrap="./tests/unit/_bootstrap.php"
+        backupGlobals="false"
+        beStrictAboutOutputDuringTests="true"
+        beStrictAboutTestsThatDoNotTestAnything="true"
+        beStrictAboutTodoAnnotatedTests="true"
+        checkForUnintentionallyCoveredCode="true"
+        verbose="true"
+        backupStaticAttributes="false"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        processIsolation="false"
+        stopOnFailure="false"
+        forceCoversAnnotation="true"
+        syntaxCheck="false">
+
+    <testsuite name="Application Test Suite">
+        <directory>./tests</directory>
+    </testsuite>
+
+    <filter>
+        <whitelist>
+            <directory>./src</directory>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="./tests/_output/coverage" lowUpperBound="35" highLowerBound="70"/>
+        <log type="coverage-clover" target="./tests/_output/clover.xml"/>
+        <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
+        <log type="testdox-html" target="./tests/_output/dox.html"/>
+    </logging>
+
+</phpunit>

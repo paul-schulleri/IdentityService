@@ -1,0 +1,9 @@
+* text eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.phar binary
+
+tests/*          export-ignore
+.gitattributes   export-ignore
